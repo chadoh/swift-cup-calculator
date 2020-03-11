@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift Cup Cost Comparison</title>
+  <link rel="stylesheet" href="global.scss">
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property="og:title" content="Swift Cup Cost Comparison">
+  <meta property="og:description" content="When coffee is sold by weight, how much does it cost per-cup?">
+  <meta property="og:image" content="https://cdn.shopify.com/s/files/1/2474/3650/files/Bird_Alt_006-01_480x.png?v=1568740173">
+  <meta property="og:url" content="https://chadoh.com/swift-cup-calculator">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <main>
+    <h1>Swift Cup Cost Comparison</h1>
+    <p>A <a href="https://swiftcupcoffee.com/collections/coffee/products/mainstay-blend-48-pk?variant=13836960366701">Swift Cup bulk pack</a> costs $1.65 per cup</p>
+    <p>A <a href="https://www.passengercoffee.com/products/keystone?variant=725243387">10oz bag of Passenger Coffee's Keystone blend</a> costs $14 for 10oz of coffee</p>
+    <p>But how much does that Passenger coffee cost per-cup?</p>
+    <p>10oz of beans, <a href="https://en.wikipedia.org/wiki/Citation_needed">properly brewed</a>, makes about 14 cups of coffee. The math for that one is pretty easy, but what about <em>your</em> staple coffee?</p>
+    <p class="highlight">
+      $<input type="number" data-behavior="cost" value="14"> for
+      <input type="number" data-behavior="weight" value="10">oz =
+      <strong>$<span data-behavior="result"></span></strong> per cup
+    </p>
+    <p>(plus all of the time you spend brewing it!)</p>
+  </main>
+  <script src="main.ts"></script>
+</body>
+</html>

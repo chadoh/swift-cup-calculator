@@ -1,0 +1,39 @@
+{
+  "name": "swift-cup-calculator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "When coffee is sold by weight, how much does it cost per-cup?",
+  "repository": "https://github.com/chadoh/swift-cup-calculator",
+  "author": "Chad Ostrowski <hi@chadoh.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html && html-inline -i dist/index.html -o docs/index.html -b dist",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.test\\.ts$"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && git add docs/index.html"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "html-inline": "^1.2.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.2",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  }
+}
